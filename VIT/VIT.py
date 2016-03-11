@@ -41,7 +41,7 @@ class scrape:
             print "I/O error({0}): {1}".format(e.errno, e.strerror)
         except:
             print "error"
-        d = {"regno": "13BCE0459", "passwd": "123456boigoutha", "vrfcd": self.string, "message": ""}
+        d = {"regno": "regno", "passwd": "password", "vrfcd": self.string, "message": ""}
 
         session.post('https://academics.vit.ac.in/student/stud_login_submit.asp',
                      data=d)  # validate with a captacha in the form
